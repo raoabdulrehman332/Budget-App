@@ -4,15 +4,22 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif ;
 }
+body{
+    background-color: rgb(246, 247, 251);
+}
+
 .wrapper{
-width: 90%;
+width: 100%;
 font-size: 16PX;
 max-width: 43.75em;
 margin: 1em auto;
 }
-
+h3{
+    color: gray;
+    font-weight: bold;
+}
 .container{
-    width: 100%;   
+    width: 120%;   
 }
 
 .sub-container{
@@ -24,11 +31,13 @@ margin: 1em auto;
 .flex{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .flex-space{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    font-weight: bold;
+    justify-content: space-evenly;
 }
 .wrapper input{
     display: block;
@@ -42,15 +51,17 @@ margin: 1em auto;
     margin-bottom: 0.6em;
 }
 .container input:focus{
-    border-color: #587ef4;
+    border-color: #587ef4;   
 }
 
 .total-amount-container,
 .user-amount-container {
     background-color: #ffffff;
     padding: 1.25em 0.9em;
+    margin-top: 25%;
+    width: 100%;
     border-radius: 0.3em;
-    box-shadow: 0 0.6em 1.2em;
+    box-shadow: 0 0.1em 1.2em;
 }
 .output-container{
     background-color: #587ef4;
@@ -61,15 +72,23 @@ margin: 1em auto;
     padding: 1.2em;
 }
 .output-container p {
-    font-weight: 500;
+    font-weight: bolder;
+    font-size: 20px;
     margin-bottom: 0.6em;
     margin-bottom: 0.6em;    
 }
 .output-container span {
     display: block;
+    font-size: 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: bolder;
     color: #e5e5e5;
+}
+input:focus::placeholder{
+    color: #23830f;
+    padding-left: 5px;
+    font-weight: 400;
+    transition: all 0.5s;
 }
 .submit {
     font-size: 1em;
@@ -80,10 +99,17 @@ margin: 1em auto;
     color: #ffffff;
     padding: 0.6em 1.2em;
     border-radius: 0.3em;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s;
     cursor: pointer;
+}
+.submit:hover{
+    background-color: #c04fe2;
 }
 .list {
  background-color: #ffffff;
+ width: 119%;
  padding: 2em 1.2em;
  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
  border-radius: 0.6em;
@@ -129,6 +155,16 @@ margin: 1em auto;
     margin-right: 1.5em;
     border: none;
     color: #587ef4;
+}
+
+#copy{
+    color: gray;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px){

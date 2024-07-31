@@ -20,6 +20,7 @@ totalAmountBtn.addEventListener("click",()=>{
     if(tempAmount === "" || tempAmount < 0){
         errorMessage.classList.remove("hide");
         errorMessage.classList.add("error");
+        
     }else{
         errorMessage.classList.add("hide");
         // Set Budget 
